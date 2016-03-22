@@ -541,6 +541,8 @@ declare namespace DevExpress {
         }
         /** A Store providing access to the HTML5 Web Storage. */
         export class LocalStore extends ArrayStore {
+            public immediate: boolean;
+            public flushInterval: number;
             constructor(options?: LocalStoreOptions);
             /** Removes all data associated with this Store. */
             clear(): void;
